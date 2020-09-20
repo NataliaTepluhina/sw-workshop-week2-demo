@@ -9,12 +9,12 @@
         there are thirteen named releases
       </div>
       <div class="mt-6 flex justify-center h-12 relative">
-        <div
+        <button
           class="flex shadow-md font-medium absolute py-2 px-4 text-green-100
-        cursor-pointer bg-green-600 rounded text-lg tr-mt  svelte-jqwywd"
+        cursor-pointer bg-green-600 rounded text-lg tr-mt"
         >
           Explore
-        </div>
+        </button>
       </div>
     </div>
   </div>

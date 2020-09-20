@@ -34,9 +34,16 @@
 import releaseList from '../assets/db'
 export default {
   releaseList,
+  props: {
+    id: {
+      type: String,
+      required: false,
+      default: '',
+    },
+  },
   computed: {
     release() {
-      return this.$options.releaseList.find(r => r.id == this.$route.params.id)
+      return this.$options.releaseList.find(r => r.id === this.id)
     },
   },
 }

@@ -13,5 +13,6 @@ export default [
     path: '/releases/:id',
     component: Release,
     name: 'release',
+    props: true,
   },
 ]

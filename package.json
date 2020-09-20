@@ -1,5 +1,5 @@
 {
-  "name": "sw-workshop-week2-demo",
+  "name": "vue-anime",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "tailwindcss": "^1.8.10",
     "vue": "^2.6.11"
   },
   "devDependencies": {

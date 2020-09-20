@@ -1,28 +1,39 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <main>
+    <nav
+      class="bg-green-800 py-2 px-5 shadow-md flex text-white items-center justify-between"
+    >
+      <span class="text-xl font-bold">Vue + Anime = 💖</span>
+      <ul>
+        <li>
+          <!-- Here be dragons -->
+        </li>
+      </ul>
+    </nav>
+    <section class="container flex flex-wrap mx-auto">
+      <ReleaseCard
+        v-for="release in $options.releasesList"
+        :key="release.version"
+        v-bind="release"
+      />
+    </section>
+  </main>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import ReleaseCard from './components/ReleaseCard'
+import releasesList from './assets/db'
 export default {
   name: 'App',
+  releasesList,
   components: {
-    HelloWorld
-  }
+    ReleaseCard,
+  },
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  font-family: 'Lato', sans-serif;
 }
 </style>

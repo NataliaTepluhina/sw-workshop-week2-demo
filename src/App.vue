@@ -6,10 +6,10 @@
       <span class="text-xl font-bold">Vue + Anime = 💖</span>
       <ul class="flex">
         <li class="px-3">
-          <router-link to="/">Home</router-link>
+          <router-link :to="{ name: 'home' }">Home</router-link>
         </li>
         <li class="px-3">
-          <router-link to="/releases">Releases</router-link>
+          <router-link :to="{ name: 'release-list' }">Releases</router-link>
         </li>
       </ul>
     </nav>

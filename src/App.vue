@@ -29,4 +29,8 @@ export default {
 body {
   font-family: 'Lato', sans-serif;
 }
+
+.router-link-exact-active {
+  text-decoration: underline;
+}
 </style>

@@ -1,5 +1,6 @@
 <template>
   <div class="release md:flex shadow-lg w-full">
+    RELEASE
     <img
       class="h-full w-full md:w-1/3  object-cover rounded-lg rounded-r-none pb-5/6"
       src=""

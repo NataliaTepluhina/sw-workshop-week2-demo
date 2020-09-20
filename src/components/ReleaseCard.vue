@@ -1,6 +1,7 @@
 <template>
   <div class="w-1/4 p-2">
-    <div
+    <router-link
+      :to="{ name: 'release', params: { id } }"
       class="max-w-md rounded overflow-hidden shadow-lg flex flex-col justify-between"
     >
       <div>
@@ -14,13 +15,17 @@
           </div>
         </div>
       </div>
-    </div>
+    </router-link>
   </div>
 </template>
 
 <script>
 export default {
   props: {
+    id: {
+      type: Number,
+      required: true,
+    },
     version: {
       type: String,
       required: true,

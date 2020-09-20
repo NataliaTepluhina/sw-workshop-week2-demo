@@ -17,8 +17,6 @@
         v-bind="release"
       />
     </section>
-
-    <section class="container flex flex-wrap mx-auto"></section>
   </main>
 </template>
 
@@ -30,7 +28,6 @@ export default {
   releasesList,
   components: {
     ReleaseCard,
-    Release,
   },
 }
 </script>

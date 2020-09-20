@@ -36,6 +36,11 @@ export default {}
 
 <style lang="scss" scoped>
 .release {
-  max-height: 300px;
+  max-height: 500px;
+}
+
+img {
+  max-height: 500px;
+  object-fit: cover;
 }
 </style>

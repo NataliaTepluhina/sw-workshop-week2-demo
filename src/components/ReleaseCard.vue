@@ -20,6 +20,10 @@
 
 <script>
 export default {
+  id: {
+    type: Number,
+    required: true,
+  },
   props: {
     version: {
       type: String,

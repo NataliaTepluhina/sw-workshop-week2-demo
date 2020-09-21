@@ -1,3 +1,5 @@
+import Cookies from 'js-cookie'
+
 export default [
   { path: '/', component: () => import('./views/Home.vue'), name: 'home' },
   {
@@ -15,5 +17,11 @@ export default [
     path: '/login',
     component: () => import('./views/Login.vue'),
     name: 'login',
+    beforeEnter: (to, from, next) => {
+      const isAuthenticated = Cookies.get('logged_in')
+
+      if (isAuthenticated) next({ name: 'home' })
+      else next()
+    },
   },
 ]

@@ -16,7 +16,7 @@ router.beforeEach((to, from, next) => {
   const isAuthenticated = Cookies.get('logged_in')
 
   if (to.name !== 'login' && !isAuthenticated)
-    next({ name: 'login', query: { route: to.name } })
+    next({ name: 'login', query: { navigate: to.name } })
   else next()
 })
 

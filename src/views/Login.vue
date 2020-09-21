@@ -44,7 +44,7 @@ export default {
   methods: {
     login() {
       Cookies.set('logged_in', true)
-      this.$router.push({ name: this.$route.query.route })
+      this.$router.push({ name: this.$route.query.navigate })
     },
   },
 }

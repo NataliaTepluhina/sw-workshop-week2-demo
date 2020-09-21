@@ -24,4 +24,8 @@ export default [
       else next()
     },
   },
+  {
+    path: '*',
+    component: () => import('./views/NotFound.vue'),
+  },
 ]

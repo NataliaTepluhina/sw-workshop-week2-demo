@@ -1,18 +1,19 @@
-import Home from './views/Home.vue'
-import ReleaseList from './views/ReleaseList.vue'
-import Release from './views/Release.vue'
-
 export default [
-  { path: '/', component: Home, name: 'home' },
+  { path: '/', component: () => import('./views/Home.vue'), name: 'home' },
   {
     path: '/releases',
-    component: ReleaseList,
+    component: () => import('./views/ReleaseList.vue'),
     name: 'release-list',
   },
   {
     path: '/releases/:id',
-    component: Release,
+    component: () => import('./views/Release.vue'),
     name: 'release',
     props: true,
+  },
+  {
+    path: '/login',
+    component: () => import('./views/Login.vue'),
+    name: 'login',
   },
 ]
